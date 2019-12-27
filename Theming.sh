@@ -74,10 +74,18 @@ gsettings set org.gnome.desktop.interface gtk-theme "$flatremixgtk"
 echo $flatfemixgtk Applied !!
 
 # option to select icon theme
-echo Flat-Remix-Blue     Flat-Remix-Blue-Light    Flat-Remix-Blue-Dark
-echo Flat-Remix-Yellow   Flat-Remix-Yellow-Light  Flat-Remix-Yellow-Dark
-echo Flat-Remix-Green    Flat-Remix-Green-Light   Flat-Remix-Green-Dark
-echo Flat-Remix-Red      Flat-Remix-Red-Light     Flat-Remix-Red-Dark
+echo Flat-Remix-Blue
+echo Flat-Remix-Blue-Light
+echo Flat-Remix-Blue-Dark
+echo Flat-Remix-Yellow
+echo Flat-Remix-Yellow-Light
+echo Flat-Remix-Yellow-Dark
+echo Flat-Remix-Green
+echo Flat-Remix-Green-Light
+echo Flat-Remix-Green-Dark
+echo Flat-Remix-Red
+echo Flat-Remix-Red-Light
+echo Flat-Remix-Red-Dark
 
 echo Enter Choice :
 read flatremix
@@ -85,24 +93,29 @@ gsettings set org.gnome.desktop.interface icon-themce "$flatremix"
 echo $flatremix Applied !
 
 #option to select gnome theme
-echo Flat-Remix                    Flat-Remix-fullPanel
-echo Flat-Remix-Dark               Flat-Remix-Dark-fullPanel
-echo Flat-Remix-Miami              Flat-Remix-Miami-fullPanel
-echo Flat-Remix-Miami-Dark         Flat-Remix-Miami-Dark-fullPanel
-echo Flat-Remix-Darkest            Flat-Remix-Darkest-fullPanel
-
+echo Flat-Remix
+echo Flat-Remix-fullPanel
+echo Flat-Remix-Dark
+echo Flat-Remix-Dark-fullPanel
+echo Flat-Remix-Darkest
+echo Flat-Remix-Darkest-fullPanel
+echo Flat-Remix-Miami
+echo Flat-Remix-Miami-fullPanel
+echo Flat-Remix-Miami-Dark
+echo Flat-Remix-Miami-Dark-fullPanel
 echo Enter Choice :
 read flatremixgnome
 gsettings set org.gnome.desktop.wm.preferences theme "$flatremixgnome"
 echo $flatremixgnome Applied !
-echo Thanks
-echo Check out my GitHub profile at github.com/kushagrakarira
 
-## Cursor Theme
-## This might need su permission as the folder is to be in /usr/share/icons
-# echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
-# mv ~/Projects/Cursor ~/Project/Cursor-backup
-# mkdir ~/Projects/Cursor
-# ln -s ~/Projects/Cursor /usr/share/icons/Cursor
-### set default cursor theme to Cursor
-# echo You can now move any theme to ~/Projects/Cursor and it'll be applied instantly !!
+# Cursor Theme
+# This might need su permission as the folder is to be in /usr/share/icons
+echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
+mv ~/Projects/Cursor ~/Project/Cursor-backup
+mkdir ~/Projects/Cursor
+sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
+## set default cursor theme to Cursor
+echo You can now move any theme to ~/Projects/Cursor and it will be applied instantly
+
+echo Thanks for using the script
+echo Check out my GitHub profile at github.com/kushagrakarira
