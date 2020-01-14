@@ -89,7 +89,7 @@ echo Flat-Remix-Red-Dark
 
 echo Enter Choice :
 read flatremix
-gsettings set org.gnome.desktop.interface icon-themce "$flatremix"
+gsettings set org.gnome.desktop.interface icon-theme "$flatremix"
 echo $flatremix Applied !
 
 #option to select gnome theme
