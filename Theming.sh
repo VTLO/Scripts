@@ -12,21 +12,20 @@ git clone https://github.com/daniruiz/flat-remix-gtk.git
 git clone https://github.com/daniruiz/flat-remix.git
 git clone https://github.com/daniruiz/flat-remix-gnome.git
 
-# Now, moving .themes to .themes-backup
+# Clear folder & Copy comtents to .theme
 mv .themes .themes-backup
+# ln -s ~/Projects/flat-remix-gtk ~/.themes
+cp --copy-contents --force ~/Projects/flat-remix-gtk ~/.themes
 
-# .themes contain both gtk and gnome themes, we're just creating a link at that location for the downloaded theme
-
-# gtk goes into .themes
-ln -s ~/Projects/flat-remix-gtk ~/.themes
-
-# gnome goes into .local/share/themes
+# Clear folder & copy contents to .theme
 mv .local/share/themes .local/share/themes-backup
-ln -s ~/Projects/flat-remix-gnome ~/.local/share/themes
+# ln -s ~/Projects/flat-remix-gnome ~/.local/share/themes
+cp --copy-contents --force ~/Projects/flat-remix-gnome ~/.themes
 
-# Now, .icons to .icons-backup
+# Clear folder & copy contents to .icons
 mv .icons .icons-backup
-ln -s ~/Projects/flat-remix ~/.icons
+# ln -s ~/Projects/flat-remix ~/.icons
+cp --copy-contents --force ~/Projects/flat-remix ~/.icons
 
 # Option to select the gtk theme
 echo Flat-Remix-GTK-Blue
@@ -110,12 +109,12 @@ echo $flatremixgnome Applied !
 
 # Cursor Theme
 # This might need su permission as the folder is to be in /usr/share/icons
-echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
-mv ~/Projects/Cursor ~/Project/Cursor-backup
-mkdir ~/Projects/Cursor
-sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
+# echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
+# mv ~/Projects/Cursor ~/Project/Cursor-backup
+# mkdir ~/Projects/Cursor
+# sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
 ## set default cursor theme to Cursor
-echo You can now move any theme to ~/Projects/Cursor and it will be applied instantly
+# echo You can now move any theme to ~/Projects/Cursor and it will be applied instantly
 
 echo Thanks for using the script
 echo Check out my GitHub profile at github.com/kushagrakarira
