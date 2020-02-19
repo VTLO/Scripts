@@ -14,18 +14,18 @@ git clone https://github.com/daniruiz/flat-remix-gnome.git
 
 # Clear folder & Copy comtents to .theme
 mv .themes .themes-backup
-# ln -s ~/Projects/flat-remix-gtk ~/.themes
-cp --copy-contents --force ~/Projects/flat-remix-gtk ~/.themes
+ln -s ~/Projects/flat-remix-gtk ~/.themes
+#cp --copy-contents --force ~/Projects/flat-remix-gtk ~/.themes
 
 # Clear folder & copy contents to .theme
 mv .local/share/themes .local/share/themes-backup
-# ln -s ~/Projects/flat-remix-gnome ~/.local/share/themes
-cp --copy-contents --force ~/Projects/flat-remix-gnome ~/.themes
+ln -s ~/Projects/flat-remix-gnome ~/.local/share/themes
+#cp --copy-contents --force ~/Projects/flat-remix-gnome ~/.themes
 
 # Clear folder & copy contents to .icons
 mv .icons .icons-backup
-# ln -s ~/Projects/flat-remix ~/.icons
-cp --copy-contents --force ~/Projects/flat-remix ~/.icons
+ln -s ~/Projects/flat-remix ~/.icons
+#cp --copy-contents --force ~/Projects/flat-remix ~/.icons
 
 # Option to select the gtk theme
 echo Flat-Remix-GTK-Blue

