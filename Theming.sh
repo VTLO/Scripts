@@ -110,9 +110,9 @@ echo $flatremixgnome Applied !
 # Cursor Theme
 # This might need su permission as the folder is to be in /usr/share/icons
 # echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
-# mv ~/Projects/Cursor ~/Project/Cursor-backup
-# mkdir ~/Projects/Cursor
-# sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
+ mv ~/Projects/Cursor ~/Project/Cursor-backup
+ mkdir ~/Projects/Cursor
+ sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
 ## set default cursor theme to Cursor
 # echo You can now move any theme to ~/Projects/Cursor and it will be applied instantly
 
