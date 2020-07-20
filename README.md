@@ -10,3 +10,4 @@ I found a GitHub repo as scripts made by a hacker friend that was a joke but ins
 
  /CatSay - Someone gave me a job to make cowsay script, I made CatSay
 
+### Thank you everyone <3, This repo is also a part of the Arctic Code Vault by Github
