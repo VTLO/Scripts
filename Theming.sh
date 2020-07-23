@@ -67,10 +67,10 @@ echo Flat-Remix-GTK-Yellow-Darkest-NoBorder
 echo Flat-Remix-GTK-Yellow-Darkest-Solid
 echo Flat-Remix-GTK-Yellow-Darkest
 
-echo Enter choice :
+echo Enter choice : 
 read flatremixgtk
 gsettings set org.gnome.desktop.interface gtk-theme "$flatremixgtk"
-echo $flatfemixgtk Applied !!
+echo $flatremixgtk Applied !!
 
 # option to select icon theme
 echo Flat-Remix-Blue
@@ -86,7 +86,7 @@ echo Flat-Remix-Red
 echo Flat-Remix-Red-Light
 echo Flat-Remix-Red-Dark
 
-echo Enter Choice :
+echo Enter Choice : 
 read flatremix
 gsettings set org.gnome.desktop.interface icon-theme "$flatremix"
 echo $flatremix Applied !
@@ -102,7 +102,8 @@ echo Flat-Remix-Miami
 echo Flat-Remix-Miami-fullPanel
 echo Flat-Remix-Miami-Dark
 echo Flat-Remix-Miami-Dark-fullPanel
-echo Enter Choice :
+
+echo Enter Choice : 
 read flatremixgnome
 gsettings set org.gnome.desktop.wm.preferences theme "$flatremixgnome"
 echo $flatremixgnome Applied !
@@ -110,11 +111,11 @@ echo $flatremixgnome Applied !
 # Cursor Theme
 # This might need su permission as the folder is to be in /usr/share/icons
 # echo Making Cursor folder in ~/Projects This will be linked to cursor folder in /usr/share
- mv ~/Projects/Cursor ~/Project/Cursor-backup
- mkdir ~/Projects/Cursor
- sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
+# mv ~/Projects/Cursor ~/Project/Cursor-backup
+# mkdir ~/Projects/Cursor
+# sudo ln -s ~/Projects/Cursor /usr/share/icons/Cursor
 ## set default cursor theme to Cursor
 # echo You can now move any theme to ~/Projects/Cursor and it will be applied instantly
 
-echo Thanks for using the script
-echo Check out my GitHub profile at github.com/kushagrakarira
+echo Thanks for supporting the project, its now a part of the Github Arctic Code Vault !! 
+echo Check out my GitHub profile at https://github.com/KushagraKarira/Scripts
