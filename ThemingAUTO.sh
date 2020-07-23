@@ -20,3 +20,6 @@ ln -s ~/Projects/flat-remix ~/.icons
 gsettings set org.gnome.desktop.interface gtk-theme Flat-Remix-GTK-Blue-Darkest-Solid-NoBorder
 gsettings set org.gnome.desktop.interface icon-theme Flat-Remix-Blue-Dark
 gsettings set org.gnome.desktop.wm.preferences theme Flat-Remix-Darkest-fullPanel
+
+echo Thanks for supporting the project, its now a part of the Github Arctic Code Vault !! 
+echo Check out my GitHub profile at https://github.com/KushagraKarira/Scripts
